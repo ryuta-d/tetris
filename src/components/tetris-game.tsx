@@ -50,6 +50,7 @@ export function TetrisGame(): JSX.Element {
   const [lines, setLines] = useState<number>(0)
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
   const [gameOver, setGameOver] = useState<boolean>(false)
+  const [isStarted, setIsStarted] = useState<boolean>(false); 
 
   const getRandomTetromino = useCallback((): Tetromino => {
     const pieces: TetrominoType[] = ['I', 'J', 'L', 'O', 'S', 'T', 'Z']
